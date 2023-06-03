@@ -1,0 +1,346 @@
+:root {
+  --bs-font-sans-serif: 'Rubik', sans-serif;
+}
+
+
+/*
+.container-xxl { 
+  max-width: 1530px;
+  max-width: 1200px;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+*/
+
+
+/* ////////////////////////////////////////////////////// Navbar CSS Start ////////////////////////////////////////// */
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 27px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #999999;
+  background: #ffffff;
+  border: 3px solid #999999;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+
+.btn.btn-border-1::after,
+.btn.btn-border-1::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  visibility: hidden;
+}
+
+.btn.btn-border-1::after {
+  bottom: -3px;
+  right: -3px;
+  border-left: 3px solid #222222;
+  border-bottom: 3px solid #222222;
+  transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+
+.btn.btn-border-1::before {
+  top: -3px;
+  left: -3px;
+  border-top: 3px solid #222222;
+  border-right: 3px solid #222222;
+  transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+
+.btn.btn-border-1:hover {
+  animation: pulse 1s ease-out .4s;
+  color: #222222;
+}
+
+.btn.btn-border-1:hover::after,
+.btn.btn-border-1:hover::before {
+  width: calc(100% + 3px);
+  height: calc(100% + 3px);
+  visibility: visible;
+  transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::after {
+  transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::before {
+  transition: width .1s ease, height .1s ease .1s;
+}
+
+.btn.btn-border-2::after,
+.btn.btn-border-2::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
+}
+
+.btn.btn-border-2::after {
+  top: -3px;
+  left: -3px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.btn.btn-border-2::before {
+  bottom: -3px;
+  right: -3px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.btn.btn-border-2:hover {
+  color: #222222;
+}
+
+.btn.btn-border-2:hover::after,
+.btn.btn-border-2:hover::before {
+  width: calc(50% + 3px);
+  height: calc(50% + 3px);
+  border-color: #222222;
+}
+
+.btn.btn-border-3::after,
+.btn.btn-border-3::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
+}
+
+.btn.btn-border-3::after {
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.btn.btn-border-3::before {
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.btn.btn-border-3:hover {
+  color: #222222;
+}
+
+.btn.btn-border-3:hover::after,
+.btn.btn-border-3:hover::before {
+  width: 30px;
+  height: 30px;
+  border-color: #222222;
+}
+
+.btn.btn-border-4::after,
+.btn.btn-border-4::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
+}
+
+.btn.btn-border-4::after {
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.btn.btn-border-4::before {
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.btn.btn-border-4:hover {
+  color: #222222;
+}
+
+.btn.btn-border-4:hover::after,
+.btn.btn-border-4:hover::before {
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  border-color: #222222;
+}
+
+/* ///////////////////////////////////////////// Navbar CSS End /////////////////////////////////////////////////////*/
+
+/* //////////////////////////////////////////// Search Bar CSS Start /////////////////////////////////////////////////*/
+.col-md-3{
+  transform: translateY(-8px);
+}
+
+
+.col-md-3::after,
+.col-md-3::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
+}
+
+.col-md-3::after {
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.col-md-3::before {
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.col-md-3:hover {
+  color: #222222;
+}
+
+.col-md-3:hover::after,
+.col-md-3:hover::before {
+  width: 90px;
+  height: 30px;
+  border-color: #222222;
+}
+
+/* ///////////////////////////////////////////// Search Bar CSS End /////////////////////////////////////////////////*/
+
+
+body {
+  background-image: url("/img/i-like-food.svg");
+  background-color: rgb(243,243,243);
+}
+
+a { color: var(--bs-dark); }
+
+
+/* ///////////////////////////////////////////////////// Mid Button CSS Start  /////////////////////////////////////////*/
+#btn_::after,
+#btn_::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
+}
+
+#btn_::after {
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+#btn_::before {
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+#btn_:hover:after,
+#btn_:hover::before {
+  width: calc(100% + 15px);
+  height: calc(100% + 15px);
+  border-color: #222222;
+}
+/* ///////////////////////////////////////////////////// Mid Button CSS End  /////////////////////////////////////////*/
+
+.submit__{
+  margin-top: 0%;
+  padding-top: 0cm;
+}
+
+/* ///////////////////////////////////////////////////// Category Card CSS Start ///////////////////////////////////////*/
+.category__link {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: 250ms all;
+}
+
+.category__link:hover {
+  transform: scale(1.1);
+  color: black;
+  
+}
+
+.category__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.category__img--large {
+  height: 330px;
+}
+
+.category__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.py-5{
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+body {
+
+  background: #D0D8DB;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+*/
+
+textarea {
+    resize: none;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+/* ///////////////////////////////////////////////////// Category Card CSS End ///////////////////////////////////////*/
+
+
+

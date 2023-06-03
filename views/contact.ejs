@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= typeof title !='undefined' ? title: 'Damn Delicious' %>
+    </title>
+    <!-- <link rel = "icon" href = "https://w7.pngwing.com/pngs/600/375/png-transparent-knife-fork-cutlery-chef-logo-kitchen-hand-steak-knife.png" type = "image/x-icon"> -->
+    <link rel="icon" href="https://www.pngitem.com/pimgs/m/56-567661_clip-art-burger-logo-hd-png-download.png"
+        type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container-xxl px-md-5 bg-white shadow-lg">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+            <!-- Body -->
+            <main>
+                <div class="submit_ px-4 text-center">
+
+                    <div class="mt-4 mb-4">
+                        <h1 class="display-5 fw-bold">Wanna Contact Our Team ?? </h1>
+                        <div class="col-lg-6 mx-auto">
+                            <p class="lead">Just fill this form, someone from our <br> team will soon get back to you...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+
+                <div class="row justify-content-center">
+                    <div class="col-8">
+
+                        <!-- Tutorial To Email Integrity : https://www.youtube.com/watch?v=Yg6POD0M30w -->
+                        <form action="https://formsubmit.co/80fc1b84992f6a301ea92b68ed8bbbbc" method="POST" enctype="multipart/form-data" id="sendMail">
+                            <!-- Adding Honey Pot -->
+                            <input type="text" name="_honey" style="display: none;">
+                            <!-- Disable Captcha -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <!-- Redirect To Success Page -->
+                            <input type="hidden" name="_next" value="http://localhost:3200/success">
+
+                            <div class="row g-3">
+
+                                <div class="col-12">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" name="name" id="name" class="form-control" required
+                                        placeholder="Enter your full name">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" name="email" id="email" class="form-control" required
+                                        placeholder="Enter your working email address">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="phone" class="form-label"> Phone Number </label>
+                                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
+                                        class="form-control" />
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="description" class="form-label">Description</label>
+                                    <textarea name="description" id="description" class="form-control" cols="30"
+                                        rows="4"
+                                        placeholder="Please brief your motivation/reason for contacting our team!"></textarea>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Send Contact Request</button>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </main>
+
+            <!-- Building Footer -->
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
